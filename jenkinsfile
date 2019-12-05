@@ -9,3 +9,8 @@ pipeline{
         }
     }
 }
+
+def getTerraformPath(){
+    def tool name: '/home/jorgeherran/Documents/terraform/', type: 'org.jenkinsci.plugins.terraform.TerraformInstallation'
+    return tfHome
+}
